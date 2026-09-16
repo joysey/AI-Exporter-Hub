@@ -1,0 +1,46 @@
+name: 💡 Feature Request
+description: Suggest a new feature or improvement.
+title: "[Feature] "
+labels:
+  - enhancement
+
+body:
+  - type: dropdown
+    id: product
+    attributes:
+      label: Which plugin or product is this for?
+      options:
+        - AIExportHub — General
+        - ChatGPT → Notion
+        - ChatGPT → Obsidian / Markdown
+        - ChatGPT → PDF
+        - Claude → Notion
+        - Claude → Obsidian / Markdown
+        - Claude → PDF
+        - Gemini → Notion
+        - Gemini → Obsidian / Markdown
+        - Gemini → PDF
+        - Perplexity → Notion
+        - Perplexity → Obsidian / Markdown
+        - Grok → Notion
+        - Grok → Obsidian / Markdown
+        - Genspark → Obsidian / Markdown
+        - AI Exporter Hub for Obsidian
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: request
+    attributes:
+      label: What would you like us to add or improve?
+      description: Describe the feature or improvement you would like to see.
+      placeholder: Tell us your idea...
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshot or example
+      description: Optional — drag and drop an image if it helps explain your idea.
