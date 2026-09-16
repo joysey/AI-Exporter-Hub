@@ -1,0 +1,45 @@
+name: 🐛 Report a Problem
+description: Tell us what happened.
+title: "[Issue] "
+labels:
+  - bug
+
+body:
+  - type: dropdown
+    id: product
+    attributes:
+      label: Which plugin are you using?
+      options:
+        - ChatGPT → Notion
+        - ChatGPT → Obsidian / Markdown
+        - ChatGPT → PDF
+        - Claude → Notion
+        - Claude → Obsidian / Markdown
+        - Claude → PDF
+        - Gemini → Notion
+        - Gemini → Obsidian / Markdown
+        - Gemini → PDF
+        - Perplexity → Notion
+        - Perplexity → Obsidian / Markdown
+        - Grok → Notion
+        - Grok → Obsidian / Markdown
+        - Genspark → Obsidian / Markdown
+        - AI Exporter Hub for Obsidian
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: details
+    attributes:
+      label: What happened?
+      description: Please describe the issue and what you were trying to do.
+      placeholder: Tell us what happened...
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: Drag and drop screenshots here if helpful. Please remove private or sensitive information before uploading.
